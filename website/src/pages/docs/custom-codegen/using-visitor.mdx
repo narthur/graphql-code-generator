@@ -49,7 +49,7 @@ module.exports = {
 }
 ```
 
-Then, create your initial visitor, in our case, we would like to transform a `FieldDefinition` and `ObjectTypeDefinition`, so let's create an object with a stub definitions, an use `visit` to run it:
+Then, create your initial visitor, in our case, we would like to transform a `FieldDefinition` and `ObjectTypeDefinition`, so let's create an object with stub definitions, and use `visit` to run it:
 
 ```js {8-13}
 const { getCachedDocumentNodeFromSchema } = require('@graphql-codegen/plugin-helpers')
